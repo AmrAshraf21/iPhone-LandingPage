@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: cursive;
+}
+.header{
+width: 100%;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.873);
+color: white;
+overflow: hidden;
+
+}
+.list-unstyled{
+    list-style: none;
+}
+.container{
+    width: 80%;
+    margin:  auto;
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .navbar img{
+        width:5%;
+        display: block;
+      
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: space-between;
+        flex-basis:50% ;
+        font-size: 20px;
+
+    }
+    .navbar ul li{
+        padding: 5px 20px;
+        display: block;
+        cursor: pointer;
+    }
+    .navbar ul li:hover{
+        background-color: rgb(221, 205, 205);
+        color:black
+    }
+    @media(max-width:667px){
+       
+        .navbar{
+            flex-direction: column;
+            text-align: center;
+        }
+        .navbar img{
+           width: 1.5rem;
+           
+        }
+        .navbar ul{
+            margin-top: 1.1rem;
+            font-size: 15px;
+        }
+        .navbar ul li{
+            padding: 0.2rem;
+        }
+
+    }
+
+    .second{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        margin:auto;
+
+    }
+    .second .content{
+        flex-basis: 40%;
+       
+}
+.second img{
+    width: 25%;
+}
+   .second .content h1{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 5px;
+
+   }
+   .second .content p{
+    line-height: 2;
+    width: 100%;
+    margin: 20px 0;
+    
+   }
+   .second .content .btn{
+       border: none;
+       padding: 5px 20px;
+       border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.second .content .btn:hover{
+    color: white;
+    background-color: black;
+}
+@media(max-width:667px){
+    .second{
+        flex-direction: column-reverse;
+        text-align: center;
+        font-size: 0.6rem;
+       
+    }
+    .second .content h1{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+      
+    }
+    .second .content p{
+        font-size: 0.9rem;
+        margin-bottom: 0;
+      
+    }
+  
+
+}
+.icons{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+   
+   
+}
+.icons img{
+    width:3rem;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.icons img:hover{
+    transform: scale(1.5);
+}
+@media(max-width:667px){
+    .icons{
+        text-align: center;
+        justify-content: space-around;
+    }
+}
